@@ -1,19 +1,27 @@
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
-op = input("Enter operation (+ - * /): ")
+print("Welcome to Pooja's Python Calculator")
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+operation = input("Enter operation (+ - * /): ")
 
-if op == "+":
-    print("Result:", a + b)
-elif op == "-":
-    print("Result:", a - b)
-elif op == "*":
-    print("Result:", a * b)
+if operation == '+':
+    result = a + b
+    print(f"Result: {a} + {b} = {result}")
+
+elif operation == '-':
+    result = a - b
+    print(f"Result: {a} - {b} = {result}")
+
+elif operation == '*':
+    result = a * b
+    print(f"Result: {a} * {b} = {result}")
+
 elif operation == '/':
-if b == 0:
-     print("Error: Division by zero is not allowed")
-else:
-    result = a/b
-    print(result)
+    if b == 0:
+        print("Error: Division by zero is not allowed")
+    else:
+        result = a / b
+        print(f"Result: {a} / {b} = {result}")
 
 else:
-    print("Invalid operation")
+    print("Invalid operation. Please use +, -, *, or /")
+print("Thank you for using the calculator!")
