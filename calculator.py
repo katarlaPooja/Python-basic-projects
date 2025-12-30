@@ -8,7 +8,12 @@ elif op == "-":
     print("Result:", a - b)
 elif op == "*":
     print("Result:", a * b)
-elif op == "/":
-    print("Result:", a / b)
+elif operation == '/':
+if b == 0:
+     print("Error: Division by zero is not allowed")
+else:
+    result = a/b
+    print(result)
+
 else:
     print("Invalid operation")
